@@ -6,15 +6,11 @@ class Column extends React.Component {
   static propTypes = {
     columnTitle: PropTypes.string,
   }
-
-  static defaultProps = {  
-    columnTitle: 'type a name!',
-  }
   
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.columnTitle}</h3>
+        <h3 className={styles.title}>{this.props.title}</h3>
       </section>
     )
   }
