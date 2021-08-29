@@ -6,15 +6,24 @@ import PropTypes from 'prop-types';
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
+    cancelConfirmation: PropTypes.bool,
   }
 
   static defaultProps = {
     text: 'Add new item',
+    cancelConfirmation: false,
   }
 
   state = {
     value: '',
     visibleButtons: false,
+  }
+
+  hideButton() {
+    this.setState({
+      value: '',
+      visibleButtons: false
+    });
   }
 
   handleChange = event => {
@@ -28,18 +37,21 @@ class Creator extends React.Component {
   handleOK = () => {
     if(this.state.value != ''){
       this.props.action(this.state.value);
-      this.setState({
-        value: '',
-        visibleButtons: false
-      });
+      this.hideButton();
     }
   }
 
   handleCancel = () => {
-    this.setState({
-      value: '',
-      visibleButtons: false
-    });
+    if(this.props.cancelConfirmation) {
+
+      if (window.confirm("Do you really want to Cancel?")) {
+        this.hideButton();
+      }
+      
+    } else {
+      this.hideButton();
+    }
+
   }
 
   render() {
