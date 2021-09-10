@@ -15,4 +15,4 @@ Hero.propTypes = {
   imageHero: PropTypes.string.isRequired,
 };
 
-export default Hero
+export default Hero;

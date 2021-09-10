@@ -19,8 +19,8 @@ class App extends React.Component {
             description: 'new list',
             image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
             columns: [],
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -32,12 +32,12 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         <div>
           {this.state.lists.map(({key, ...listProps}) => (
-          <List key={key} {...listProps} />
-        ))}
+            <List key={key} {...listProps} />
+          ))}
         </div>
         <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
       </main>
-    )
+    );
   }
 }
 

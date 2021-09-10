@@ -6,17 +6,17 @@ import PropTypes from 'prop-types';
 class Card extends React.Component {
 
   static propTypes = {
-     title: PropTypes.node.isRequired,
-    }
+    title: PropTypes.node.isRequired,
+  }
   
 
- render() {
+  render() {
     return (
       <div className={styles.component}>
         <h3 >{this.props.title}</h3>
       </div>
-    )
+    );
   }
 }
   
-  export default Card;
+export default Card;

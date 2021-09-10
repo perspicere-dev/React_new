@@ -26,8 +26,8 @@ class Column extends React.Component {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             // [warunek logiczny] ? [wartość jeśli true] : [wartość jeśli false]
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -42,14 +42,14 @@ class Column extends React.Component {
         </h3>
         <div>
           {this.state.cards.map(({key, ...cardProps}) => (
-          <Card key={key} {...cardProps} />
-        ))}
+            <Card key={key} {...cardProps} />
+          ))}
         </div>
         <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)} cancelConfirmation={true}/>
         </div>
       </section>
-    )
+    );
   }
 }
 
