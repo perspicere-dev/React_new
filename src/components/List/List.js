@@ -21,12 +21,13 @@ class List extends React.Component {
   }
 
   render() {
+    const {title, image, description} = this.props;
+
     return (
       <section className={styles.component}>
-        <Hero titleText={this.props.title}
-          imageHero={this.props.image} />
+        <Hero titleText={title} image={image} />
         <div className={styles.description}>
-          {ReactHtmlParser(this.props.description)}
+          {ReactHtmlParser(description)}
         </div>
         {/* <div className={styles.columns}>
           {this.state.columns.map(({key, ...columnProps}) => (
