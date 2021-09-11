@@ -1,5 +1,5 @@
 import React from 'react';
-import List from '../List/List';
+import List from '../List/ListContainer';
 import styles from './App.scss';
 import {listData, settings} from '../../data/dataStore';
 import Creator from '../Creator/Creator';
