@@ -1,13 +1,20 @@
 import React from 'react';
-import List from '../List/List';
+// import List from '../List/List';
 import styles from './App.scss';
-import {pageContents, listData, settings} from '../../data/dataStore';
+import {listData, settings} from '../../data/dataStore';
 import Creator from '../Creator/Creator';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
   state = {
     lists: [listData],
   }
+
+  static propTypes = {
+    title: PropTypes.node,
+    subtitle: PropTypes.node,
+  }
+
   addList(title){
     this.setState(state => (
       {
@@ -26,14 +33,15 @@ class App extends React.Component {
   }
 
   render() {
+    const {title, subtitle} = this.props;
     return (
       <main className={styles.component}>
-        <h1 className={styles.title}>{pageContents.title}</h1>
-        <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
+        <h1 className={styles.title}>{title}</h1>
+        <h2 className={styles.subtitle}>{subtitle}</h2>
         <div>
-          {this.state.lists.map(({key, ...listProps}) => (
+          {/* {this.state.lists.map(({key, ...listProps}) => ( // przez ...listProps przekazywane są do List i w List poprzez this.props.xxxx dostajemy się do róznych np. obiektów, tablic etc. 
             <List key={key} {...listProps} />
-          ))}
+          ))} */}
         </div>
         <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
       </main>

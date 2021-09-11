@@ -18,6 +18,7 @@ class Column extends React.Component {
   }
   
   addCard(title){
+    console.log('this col props + this', this.props, this ),
     this.setState(state => (
       {
         cards: [
