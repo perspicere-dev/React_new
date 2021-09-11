@@ -7,6 +7,7 @@ class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
     cancelConfirmation: PropTypes.bool,
+    action: PropTypes.func,
   }
 
   static defaultProps = {
@@ -36,7 +37,6 @@ class Creator extends React.Component {
 
   handleOK = () => {
     if(this.state.value != ''){
-      // eslint-disable-next-line react/prop-types
       this.props.action(this.state.value);
       this.hideButton();
     }
