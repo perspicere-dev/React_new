@@ -1,0 +1,2 @@
+//Skąd w columnsRedux.js getColumnsForList ma ([columns, listId]), omówić działenie getColumnsForList 
+//jak i skądw ListContaiuner.js ma prekazywany state w argumencie, 

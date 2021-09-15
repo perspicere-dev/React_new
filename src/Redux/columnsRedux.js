@@ -5,7 +5,7 @@ export const getColumnsForList = ({columns}, listId) => columns.filter(column =>
 
 // action name creator
 const reducerName = 'columns';
-const createActionName = name => `app/${reducerName}/${name}`;
+const createActionName = name => `app/${reducerName}/${name}`; //same in every redux file!
 
 // action types
 export const ADD_COLUMN = createActionName('ADD_COLUMN');
@@ -22,3 +22,4 @@ export default function reducer(statePart = [], action = {}) {
       return statePart;
   }
 }
+
