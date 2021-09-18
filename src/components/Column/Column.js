@@ -6,6 +6,7 @@ import Creator from '../Creator/Creator';
 import {settings} from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 
+
 class Column extends React.Component {
  
   static propTypes = {
