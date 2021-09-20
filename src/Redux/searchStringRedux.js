@@ -1,9 +1,10 @@
 // selectors
 export const getSearchString = ({searchString}) => searchString;
 
+export const countVisibleCards = ({cards}) => cards.length;
+
 export const countAllCards = ({cards, searchString}) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).length;
 
-export const countVisibleCards = ({cards}) => cards;
 
 // action name creator
 const reducerName = 'searchString';

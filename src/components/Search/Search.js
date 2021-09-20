@@ -10,7 +10,7 @@ class Search extends React.Component {
     text: PropTypes.string,
     searchString: PropTypes.string,
     changeSearchString: PropTypes.func,
-    countVisible: PropTypes.node,
+    countVisible: PropTypes.array,
     countAll: PropTypes.number,
   }
 
