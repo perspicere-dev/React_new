@@ -13,23 +13,6 @@ class Home extends React.Component {
     lists: PropTypes.array,
   }
 
-  // addList(title){
-  //   this.setState(state => (
-  //     {
-  //       lists: [
-  //         ...state.lists,
-  //         {
-  //           key: state.lists.length ? state.lists[state.lists.length-1].key+1 : 0,
-  //           title,
-  //           description: 'new list',
-  //           image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  //           columns: [],
-  //         },
-  //       ],
-  //     }
-  //   ));
-  // }
-
   render() {
     const {title, subtitle, lists} = this.props;
 

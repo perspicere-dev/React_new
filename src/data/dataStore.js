@@ -12,6 +12,9 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  header: {
+    logo: 'apple',
+  },
 };
 
 export const pageContents = {
@@ -70,6 +73,12 @@ export const listData = {
       ],
     },
   ],
+};
+
+export const FAQcontent = {
+  title: 'FAQ',
+  image: 'https://images.freeimages.com/images/large-previews/5c1/beer-1326297.jpg',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
 };
 
 const lists = [
