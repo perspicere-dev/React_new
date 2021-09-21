@@ -13,8 +13,9 @@ export const settings = {
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
   header: {
-    logo: 'apple',
+    logo: 'dog',
   },
+  slash: '/',
 };
 
 export const pageContents = {
@@ -77,8 +78,16 @@ export const listData = {
 
 export const FAQcontent = {
   title: 'FAQ',
-  image: 'https://images.freeimages.com/images/large-previews/5c1/beer-1326297.jpg',
+  image: 'https://images.freeimages.com/images/large-previews/7e9/ladybird-1367182.jpg',
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+  toAdress: '/FAQ',
+};
+
+export const infoContent = {
+  title: 'InFo',
+  image: 'https://images.freeimages.com/images/large-previews/c64/my-beloved-mountains-2-1375135.jpg',
+  text: '!Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+  toAdress: '/info',
 };
 
 const lists = [
