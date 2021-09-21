@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../Container/container';
+import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
 import {FAQcontent} from '../../data/dataStore';
 
