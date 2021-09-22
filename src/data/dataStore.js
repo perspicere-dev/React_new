@@ -97,7 +97,28 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>now!</sup>',
+    description: 'Bulbulatory do obsługi bulbulatorni',
+    image: 'https://images.freeimages.com/images/large-previews/b3d/flowers-1375316.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do <sup>now!</sup>',
+    description: 'Bulbulatory do obsługi bulbulatorni',
+    image: 'https://images.freeimages.com/images/large-previews/b3d/flowers-1375316.jpg',
+  },
+  
+  {
+    id: 'list-4',
+    title: 'Things to do <sup>later!</sup>',
+    description: 'nawozy bulbulatora',
+    image: 'https://images.freeimages.com/images/large-previews/0dd/a-winding-path-leading-to-a-secluded-place-1638724.jpg',
+  },
 ];
+
+
 
 const columns = [
   {
