@@ -1,2 +1,2 @@
-//Skąd w columnsRedux.js getColumnsForList ma ([columns, listId]), omówić działenie getColumnsForList 
-//jak i skądw ListContaiuner.js ma prekazywany state w argumencie, 
+DOdo omówiemnia bardzo "Zmiany w ListContainer" w module 17.
+({cards, searchString} - oznacza = "state.cards; state.searchString"

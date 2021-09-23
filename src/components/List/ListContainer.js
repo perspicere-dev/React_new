@@ -6,6 +6,7 @@ const mapStateToProps = (state, props) => {
   const id = props.match.params.id;
   const filteredLists = state.lists.filter(list => list.id == id);
   const listParams = filteredLists[0] || {};
+  console.log('xxx', props);
 
   return {
     ...listParams,
