@@ -17,9 +17,9 @@ class SearchResults extends React.Component {
 
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>title
+        <h3 className={styles.title}> Serch results: 
           <span className={styles.icon}>
-            <Icon name='cat' />
+            <Icon name='search' />
           </span>
         </h3>
         <div>
