@@ -1,2 +1,15 @@
-DOdo omówiemnia bardzo "Zmiany w ListContainer" w module 17.
-({cards, searchString} - oznacza = "state.cards; state.searchString"
+1. DOdo omówiemnia bardzo "Zmiany w ListContainer" w module 17.
+2. ({cards, searchString} - oznacza = "state.cards; state.searchString"
+3. React Router i przekazywanie danych w parametrze linku?? DO przeanalizowania cała koncepcja nowego wyszukiwania -> Zadanie: Wyniki wyszukiwania M17
+3. export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId); {columns } to destrukturyzacja state który dostaje w ListContainer.js?
+4 . M17 Dzięki temu mogliśmy w pliku globalRedux.js zdefiniować reducer, który obsługuje cały stan aplikacji, a nie tylko jego fragment. Potrzebujemy tego do jednoczesnego ustawienia kilku właściwości znajdujących się w stanie aplikacji.?
+5. M.17 / 16 omówić dispachowanie, nazwy parametrów skąd co pochodzi i dokąd leci. Skąd 
+6. Jakbym chciał cosole.log np state w HomeContainer.js zrobić to jak?
+7. M18 {formatPrice(calculateTotal(props.tripCost, props.options))} dlaczego nie jest props.order.options?
+8. Przeanalizować genOrderOptions - skąd to dostaje i jak to jest z nazwami
+9. M18 - koniecznie do omówniea: <OrderOption currentValue={props.options[option.id]} {...option} /> Zacznijmy od aktualnej wartości – w tym celu z OrderForm do OrderOption musimy przekazać props currentValue o wartości options[id], gdzie id musisz zamienić na odpowiednie wyrażenie, którego wart
+10. M19 - ?? => Zwróć uwagę, że testValue odwołuje się do id drugiego obiektu w mockProps.values, podczas gdy mockProps.currentValue jest równe id pierwszego obiektu. W ten sposób zasymulujemy sytuację, w której opcja ma już jakąś wartość, którą chcemy zmienić na inną (lub do której dodamy inną, w przypadku checkboxes).
+11. M19 omówić json server
+
+12. M20 "Zauważ, że wzdłuż lewej krawędzi okna terminala pojawiły się dodatkowe znaki. Tworzą one prosty graf, który pokazuje przebieg zmian w branchach. " gówno się pojawia bo mają jakiś inny terminal, jaki?
+13. "I znów powtórka — tym razem dla brancha master zmieniamy title wewnątrz head i zapisujemy commit" co? Jak mam zmienić na master? Czy main to odpowiednik master?
